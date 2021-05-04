@@ -16,23 +16,23 @@ function App() {
     const imc: number = weight / ((height / 100) ** 2);
     const imcToReturn = imc.toFixed(2);
     
-    if (imc >= 16 && imc <= 16.9) {
+    if (imc >= 16 && imc < 17) {
       return `${imcToReturn} kg/m²: Muito abaixo do peso`;
     }
 
-    if (imc >= 17 && imc <= 18.4) {
+    if (imc >= 17 && imc < 18.5) {
       return `${imcToReturn} kg/m²: Abaixo do peso`;
     }
 
-    if (imc >= 18.5 && imc <= 24.9) {
+    if (imc >= 18.5 && imc < 25) {
       return `${imcToReturn} kg/m²: Peso normal`;
     }
 
-    if (imc >= 25 && imc <= 29.9) {
+    if (imc >= 25 && imc < 30) {
       return `${imcToReturn} kg/m²: Acima do peso`;
     }
 
-    if (imc >= 30 && imc <= 34.9) {
+    if (imc >= 30 && imc < 35) {
       return `${imcToReturn} kg/m²: Obesidade grau 1`;
     }
 
